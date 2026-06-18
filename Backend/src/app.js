@@ -21,7 +21,7 @@ app.use(cors({
         // Allow requests with no origin (e.g. Postman, server-to-server)
         if (!origin) return callback(null, true)
 
-        if (allowedOrigins.some(allowed => origin === allowed)) {
+        if (allowedOrigins.some(allowed => origin === allowed) || origin.endsWith(".vercel.app")) {
             callback(null, true)
         } else {
             callback(new Error("Not allowed by CORS"))
