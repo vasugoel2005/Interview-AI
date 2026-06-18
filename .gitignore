@@ -1,0 +1,22 @@
+# Dependency directories
+**/node_modules/
+node_modules/
+
+# Production builds
+**/dist/
+dist/
+
+# Local env files (highly critical to protect credentials)
+**/.env
+.env
+
+# System / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
